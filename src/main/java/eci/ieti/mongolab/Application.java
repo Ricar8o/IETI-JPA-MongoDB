@@ -1,9 +1,9 @@
-package eci.ieti;
+package eci.ieti.mongolab;
 
-import eci.ieti.data.CustomerRepository;
-import eci.ieti.data.ProductRepository;
-import eci.ieti.data.model.Customer;
-import eci.ieti.data.model.Product;
+import eci.ieti.mongolab.data.CustomerRepository;
+import eci.ieti.mongolab.data.ProductRepository;
+import eci.ieti.mongolab.data.model.Customer;
+import eci.ieti.mongolab.data.model.Product;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

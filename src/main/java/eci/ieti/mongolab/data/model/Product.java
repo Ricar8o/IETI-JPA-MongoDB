@@ -1,4 +1,4 @@
-package eci.ieti.data.model;
+package eci.ieti.mongolab.data.model;
 
 import org.springframework.data.annotation.Id;
 

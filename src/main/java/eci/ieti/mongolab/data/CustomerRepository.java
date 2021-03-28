@@ -1,8 +1,8 @@
-package eci.ieti.data;
+package eci.ieti.mongolab.data;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import eci.ieti.data.model.Customer;
+import eci.ieti.mongolab.data.model.Customer;
 
 import java.util.List;
 

@@ -1,7 +1,5 @@
 package eci.ieti.mongolab.data.model;
 
-import java.util.Date;
-
 public class Todo {
     private String description;
     private int priority;

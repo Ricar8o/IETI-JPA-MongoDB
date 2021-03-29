@@ -24,4 +24,4 @@
 
     The names are customer and product.
 
-    Nowhere are those names assigned, I assume they have those names because of the @document annotation that the model classes have.
+    Nowhere are those names assigned, I assume they have those names because the model classes and nowhere is specified any name for the collections.

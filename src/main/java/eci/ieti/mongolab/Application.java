@@ -194,6 +194,17 @@ public class Application implements CommandLineRunner {
         todosDescriptionLengthgt.stream().forEach(System.out::println);
         System.out.println();
 
+        // // Derived Query methods
+        // // Expired Todos
+        // todoRepository.findBeforeDueDate(new Date()).stream().forEach(System.out::println);
+        // System.out.println();
+        // // Todos that are assigned to given user and have priority greater equal to 5
+        // todoRepository.findByResponsibleAndPrioritygte(responsible, priority).stream().forEach(System.out::println);
+        // System.out.println();
+
+        // // Todos that contains a description with a length greater than 30 characters
+        // todoRepository.findByDescriptionLengthgt(length).stream().forEach(System.out::println);
+
         
     }
 

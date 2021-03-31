@@ -25,3 +25,8 @@
     The names are customer and product.
 
     Nowhere are those names assigned, I assume they have those names because the model classes and nowhere is specified any name for the collections.
+
+
+8. Implement the queries of the previous step using *derived query methods* in your repository interface. Is it possible to implement all of them?
+
+Users that have assigned more than 2 Todos query is not possible to implement using derived query methods because it needs information from both collections ( user and todo ).

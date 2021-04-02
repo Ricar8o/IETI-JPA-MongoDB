@@ -196,16 +196,21 @@ public class Application implements CommandLineRunner {
 
         // // Derived Query methods
         // // Expired Todos
-        // todoRepository.findBeforeDueDate(new Date()).stream().forEach(System.out::println);
+        // todoRepository.findByDueDateBefore(new Date()).stream().forEach(System.out::println);
         // System.out.println();
         // // Todos that are assigned to given user and have priority greater equal to 5
-        // todoRepository.findByResponsibleAndPrioritygte(responsible, priority).stream().forEach(System.out::println);
+        // todoRepository.findByResponsibleAndPriorityGreaterThanEqual(responsible, priority).stream().forEach(System.out::println);
         // System.out.println();
 
         // // Todos that contains a description with a length greater than 30 characters
+        // // With a Query on repository
         // todoRepository.findByDescriptionLengthgt(length).stream().forEach(System.out::println);
-
+        // System.out.println();
+        // // // With Regex
         
+        // String regex = String.format("^.{%s,}$", length+1);
+        // todoRepository.findByDescriptionRegex(regex).stream().forEach(System.out::println);;
+        // System.out.println();
     }
 
     private Customer customerQuery(MongoOperations mongoOperation) {

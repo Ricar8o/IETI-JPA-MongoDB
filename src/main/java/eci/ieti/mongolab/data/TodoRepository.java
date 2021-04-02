@@ -11,13 +11,9 @@ import eci.ieti.mongolab.data.model.Todo;
 
 public interface TodoRepository extends CrudRepository<Todo,Long>{
     Page<Todo> findByResponsible(String responsible, Pageable pageable);
-    
-    @Query("{ 'dueDate' : { $lt: ?0 } }")
-    List<Todo> findBeforeDueDate(Date date);
-
-    @Query("{ 'responsible' : { $eq: ?0 } , 'priority': { $gte: ?1 } }")
-    List<Todo> findByResponsibleAndPrioritygte(String responsible, int priority);
-    
+    List<Todo> findByDueDateBefore(Date date);
+    List<Todo> findByResponsibleAndPriorityGreaterThanEqual(String responsible, int priority);
     @Query("{ '$expr': { '$gt': [ { '$strLenCP': '$description' }, ?0 ] } }")
     List<Todo> findByDescriptionLengthgt(int length);
+    List<Todo> findByDescriptionRegex(String regex);
 }
